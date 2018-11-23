@@ -38,8 +38,6 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -47,6 +45,8 @@ Partial Class Form2
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -158,6 +158,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(131, 38)
@@ -167,21 +168,22 @@ Partial Class Form2
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(140, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(131, 38)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Label2"
         '
         'TableLayoutPanel5
         '
+        Me.TableLayoutPanel5.BackColor = System.Drawing.SystemColors.MenuBar
         Me.TableLayoutPanel5.ColumnCount = 1
         Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Label4, 0, 2)
         Me.TableLayoutPanel5.Controls.Add(Me.ComboBox1, 0, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.TextBox1, 0, 3)
-        Me.TableLayoutPanel5.Controls.Add(Me.TextBox2, 0, 5)
         Me.TableLayoutPanel5.Controls.Add(Me.Label5, 0, 4)
         Me.TableLayoutPanel5.Controls.Add(Me.Label6, 0, 6)
         Me.TableLayoutPanel5.Controls.Add(Me.ComboBox2, 0, 7)
@@ -189,6 +191,8 @@ Partial Class Form2
         Me.TableLayoutPanel5.Controls.Add(Me.Label8, 0, 10)
         Me.TableLayoutPanel5.Controls.Add(Me.TextBox3, 0, 9)
         Me.TableLayoutPanel5.Controls.Add(Me.TextBox4, 0, 11)
+        Me.TableLayoutPanel5.Controls.Add(Me.DateTimePicker1, 0, 3)
+        Me.TableLayoutPanel5.Controls.Add(Me.DateTimePicker2, 0, 5)
         Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 47)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -212,9 +216,10 @@ Partial Class Form2
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(3, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(268, 13)
+        Me.Label3.Size = New System.Drawing.Size(268, 12)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Title of Document"
         '
@@ -222,44 +227,31 @@ Partial Class Form2
         '
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(3, 58)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(268, 13)
+        Me.Label4.Size = New System.Drawing.Size(268, 12)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Date of Communication"
         '
         'ComboBox1
         '
         Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(3, 32)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(268, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(268, 20)
         Me.ComboBox1.TabIndex = 2
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(3, 90)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(268, 20)
-        Me.TextBox1.TabIndex = 3
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox2.Location = New System.Drawing.Point(3, 148)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(268, 20)
-        Me.TextBox2.TabIndex = 4
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(3, 116)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(268, 13)
+        Me.Label5.Size = New System.Drawing.Size(268, 12)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Date OF Receipt of Communication"
         '
@@ -267,42 +259,47 @@ Partial Class Form2
         '
         Me.Label6.AutoSize = True
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(3, 174)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(268, 13)
+        Me.Label6.Size = New System.Drawing.Size(268, 12)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Action Taken"
         '
         'ComboBox2
         '
         Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(3, 206)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(268, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(268, 20)
         Me.ComboBox2.TabIndex = 7
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(3, 232)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 13)
+        Me.Label7.Size = New System.Drawing.Size(40, 12)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "Status"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(3, 290)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 13)
+        Me.Label8.Size = New System.Drawing.Size(54, 12)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Remarks"
         '
         'TextBox3
         '
         Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(3, 264)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(268, 20)
@@ -311,13 +308,31 @@ Partial Class Form2
         'TextBox4
         '
         Me.TextBox4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(3, 322)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(268, 20)
         Me.TextBox4.TabIndex = 11
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DateTimePicker1.Location = New System.Drawing.Point(3, 90)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(268, 20)
+        Me.DateTimePicker1.TabIndex = 12
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DateTimePicker2.Location = New System.Drawing.Point(3, 148)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(268, 20)
+        Me.DateTimePicker2.TabIndex = 13
+        '
         'TableLayoutPanel4
         '
+        Me.TableLayoutPanel4.BackColor = System.Drawing.Color.Gray
         Me.TableLayoutPanel4.ColumnCount = 2
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -339,69 +354,80 @@ Partial Class Form2
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(3, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(131, 38)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "ADD"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(140, 3)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(131, 38)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "UPDATE"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(3, 47)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(131, 38)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "NEW"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(140, 47)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(131, 38)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "DELETE"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(3, 91)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(131, 34)
         Me.Button5.TabIndex = 4
         Me.Button5.Text = "PRINT"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.Color.LightGray
         Me.Button6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(140, 91)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(131, 34)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "SAVE"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.QA_Communication_Tracker.My.Resources.Resources.BukSU_008
         Me.ClientSize = New System.Drawing.Size(1013, 539)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.MaximizeBox = False
@@ -436,8 +462,6 @@ Partial Class Form2
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents ComboBox2 As ComboBox
@@ -452,4 +476,6 @@ Partial Class Form2
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DateTimePicker2 As DateTimePicker
 End Class
